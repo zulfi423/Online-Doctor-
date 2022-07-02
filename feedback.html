@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <section class="book" id="book">
+
+        <h1 class="heading"><span>Feed</span>back</h1>  
+    
+        <div class="row">
+            
+            <form action="feeback.php" method="post" autocomplete="on">
+                <h3>Feedback</h3>
+                <input type="text" name="name"placeholder="Name"class="box" required="required" >
+                <input type="email" name="email" placeholder="Your Email"class="box"required="required" >
+                <textarea name="feedback" placeholder= "Feedback Description..." id="" cols="30" rows="10"required="required"></textarea>
+                <input type="submit" name="book now" class="btn">
+            </form>
+    
+        </div>
+    
+    </section>
+</body>
+</html>

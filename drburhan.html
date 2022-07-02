@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Burhan</title>
+    <link rel="stylesheet" href="drayesha.css">
+</head>
+<body>
+    <section class="book" id="book">
+
+        <h1 class="heading"> <span>Doctor</span> Burhan </h1>  
+        <h2>(Cardiologist)</h2>  
+    
+        <div class="row">
+            <div class="image">
+                <img src="image/book-img.svg" alt="">
+            </div>
+            <form action="drburhan.php" method="post" autocomplete="on">
+                <h3>book appointment</h3>
+                <input type="text" name="name"placeholder="Patient Name"class="box" required="required" >
+                <input type="tel" name="number"placeholder="e.g: 0312-0000000" pattern="[0-9]{4}-[0-9]{7}" class="box" required="required"/>
+                <input type="email" name="email" placeholder="Your Email"class="box"required="required" >
+                <select name="time"  class="box" required="required">
+                    <option>Timing</option >
+                    <option value="9:00 Am to 1:00 pm">9:00 Am to 1:00 pm </option>
+                    <option value="03:00 pm to 9:00 pm"> 03:00 pm to 9:00 pm</option >
+                 </select>
+                <input type="date"name="date" min ="2022-01-01" class="box" required="required">
+                <input type="submit" name="book now" class="btn">
+            </form>
+    
+        </div>
+    
+    </section>
+</body>
+</html>
